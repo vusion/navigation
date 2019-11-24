@@ -10,10 +10,14 @@ import 'themeCSS';
 import 'baseCSS';
 
 import routes from './routes';
+const router = new VueRouter({
+    routes,
+});
+
+import VusionNavigation from '../../../src';
+Vue.use(VusionNavigation, { router });
 
 new Vue({
     el: '#app',
-    router: new VueRouter({
-        routes,
-    }),
+    router,
 });

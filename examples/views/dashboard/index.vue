@@ -10,12 +10,13 @@
     </header>
     <aside :class="$style.side">
         <u-sidebar :class="$style.sidebar">
-            <u-sidebar-item to="/overview">Overview</u-sidebar-item>
-            <u-sidebar-item to="/basic">Basic</u-sidebar-item>
-            <u-sidebar-item to="/form">Form</u-sidebar-item>
+            <u-sidebar-item to="/blog">blog</u-sidebar-item>
+            <!-- <u-sidebar-item to="/basic">Basic</u-sidebar-item>
+            <u-sidebar-item to="/form">Form</u-sidebar-item> -->
         </u-sidebar>
     </aside>
     <main :class="$style.main">
+        <!-- <navigation></navigation> -->
         <router-view></router-view>
     </main>
 </div>

@@ -1,14 +1,9 @@
 import Dashboard from './index.vue';
-import Overview from './overview.vue';
-import Basic from './basic.vue';
-
-import formRoutes from './form/routes';
+import blogRoutes from './blog/routes';
 
 export default [
     { path: '/', component: Dashboard, children: [
-        { path: '', redirect: 'overview' },
-        { path: 'overview', component: Overview },
-        { path: 'basic', component: Basic },
-        formRoutes,
+        { path: '', redirect: 'blog' },
+        blogRoutes,
     ] },
 ];
