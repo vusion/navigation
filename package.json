@@ -1,0 +1,30 @@
+{
+  "name": "@vusion-templates/web-app",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dll": "npx webpack --config webpack.dll.config.js --env.NODE_ENV production && npx webpack --config webpack.dll.config.js --env.NODE_ENV deployment",
+    "precommit": "node node_modules/vusion-hooks/precommit"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "proto-ui.vusion": "^0.6.2",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.6.10",
+    "vusion-utils": "^0.4.6",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.15.3",
+    "eslint-config-vusion": "^3.0.1",
+    "husky": "^0.14.3",
+    "vue-cli-plugin-vusion": "^0.8.4",
+    "vusion-hooks": "^0.2.1"
+  }
+}
